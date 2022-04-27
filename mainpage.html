@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Summon a 5* character</title>
+      <link rel="stylesheet" href="mainpage.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="Calculation.js"></script>
+      <!--<script type = "text/javascript" src ="Summoning.js"></script>-->
+
+    </head>
+
+  <body class="container">
+    <!--Banners Display-->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/banners/AyakaBanner.png" class="center">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/banners/WeaponBanner.png" class="center">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <!--Putting primogems and value-->
+      <img src = "images/buttons/Primogem.webp" class = "topRight">
+      <form id = "textfield">
+        <input type = "text" id = "primo" placeholder="Enter primogem value">
+      </form>
+      <!--Putting pity-->
+      <!--<form id = "pitytext">
+        <input type = "text" id = "pity" placeholder="Enter pity">
+      </form>-->
+      <!--button/img for summoning the character -->
+      <button id = summon_btn onclick="location.href = 'results.html'">
+        <img src= "images/buttons/tensummon.png" width = 100% height = 90% ></img>
+      </button>
+
+  </body>
+
+<!--Script for  banners slideshow -->
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    </script>
+</html>
